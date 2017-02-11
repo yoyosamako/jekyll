@@ -899,7 +899,7 @@ class TestFilters < JekyllUnitTest
     end
 
     context "to_integer filter" do
-      should "raise Exception when input is not integer or string" do
+      should "raise Exception when input is not number or string" do
         assert_raises NoMethodError do
           @filter.to_integer([1, 2])
         end
